@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - WonderScope Publisher</title>
+<meta name="description" content="Privacy Policy of WonderScope Publisher, a private tool that uploads videos to the operator's own YouTube channels using YouTube API Services.">
+<style>
+  :root { color-scheme: light dark; --fg: #1f2328; --muted: #59636e; --bg: #ffffff; --line: #d1d9e0; --link: #0969da; --code: rgba(127, 127, 127, 0.15); }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #3d444d; --link: #4493f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.95rem; }
+  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0.6em 0 0.3em; }
+  h2 { font-size: 1.25rem; line-height: 1.4; margin-top: 2em; padding-bottom: 0.3em; border-bottom: 1px solid var(--line); }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.9em; background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; }
+  .muted { color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <a href="https://aliekdike-afk.github.io/">Home</a>
+  <a href="https://aliekdike-afk.github.io/privacy.html">Privacy Policy</a>
+  <a href="https://aliekdike-afk.github.io/terms.html">Terms of Use</a>
+  <span class="muted">|</span>
+  <a href="#en">English</a>
+  <a href="#ja">日本語</a>
+</nav>
+
+<section id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="muted">WonderScope Publisher — Effective November 3, 2026 (version 2026-11-03)</p>
+
+<h2>About this policy</h2>
+<p>WonderScope Publisher (the "Tool") is a private command-line tool that uploads short videos to the operator's own YouTube channels, such as WonderScope (@WonderScope_jp). It runs only on the operator's own computer and is not offered to anyone else. In this policy, "we" means the developer who operates the Tool, and "you" means the person who authorizes the Tool with a Google Account. At present, that person is the operator.</p>
+<p>The Tool uses YouTube API Services. By using the Tool, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> (https://www.youtube.com/t/terms). For how Google handles your information, see the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a> (http://www.google.com/policies/privacy).</p>
+<p>Before you authorize the Tool, it asks you to agree to this policy and to the <a href="https://aliekdike-afk.github.io/terms.html">Terms of Use</a>.</p>
+
+<h2>Information the Tool accesses</h2>
+<p>When you authorize the Tool, it asks for two permissions:</p>
+<ul>
+  <li><code>youtube.upload</code>: to upload the videos you approved and set their thumbnails.</li>
+  <li><code>youtube.readonly</code>: to confirm which channel your account belongs to, and to check the status of the videos the Tool manages.</li>
+</ul>
+<p>With these permissions, the Tool accesses only the following information:</p>
+<ul>
+  <li>The authorization tokens (access token and refresh token) that Google issues.</li>
+  <li>The ID and name of the YouTube channel of the account you authorized. The Tool reads them when you authorize it and before it uses the authorization (about once a day or more), to confirm that the authorization belongs to the intended channel. It stores only the channel ID, encrypted together with the tokens; this is the same ID as the one in the Tool's settings.</li>
+  <li>For each video that the Tool uploaded, or that you recorded in the Tool as posted to that channel: the video ID and URL, the upload and processing status, the privacy status, the scheduled publication time, and the reason when YouTube reports that an upload failed or a video was rejected.</li>
+</ul>
+<p>The Tool does not access your viewing history, comments, subscribers, analytics, playlists or any other videos.</p>
+
+<h2>Information you provide</h2>
+<p>Videos, titles, descriptions, tags, the category, thumbnails, the privacy setting (public, unlisted or private), the "made for kids" setting and the publication time. You create them, and the Tool sends them to YouTube only after you approve each video. Before you approve, the Tool shows exactly what it will send, and it sends what you approved without changes.</p>
+
+<h2>How the Tool uses information</h2>
+<ul>
+  <li>To upload the videos you approved, with the settings you chose, and to schedule their publication.</li>
+  <li>To confirm that uploads finished and that scheduled videos were published, and to notice when a published video was later made private or deleted, so that the Tool's records match YouTube.</li>
+  <li>To show you the status and to notify you.</li>
+</ul>
+<p>The Tool does not use the information for advertising, does not sell it, and does not use it to train AI models.</p>
+
+<h2>Storage and security</h2>
+<p>The information is stored only on devices that the operator controls (the operator's computer and, if used, the operator's own network storage), in a local database and log files. We do not run a server, and the Tool does not send this information anywhere except as described under "Sharing". Authorization tokens are encrypted (AES-256-GCM) before they are saved, and the key is kept in a local settings file outside the source code. The Tool communicates with Google only over HTTPS.</p>
+
+<h2>Sharing</h2>
+<ul>
+  <li>YouTube (Google): the videos and settings you approved, and the requests needed to check their status.</li>
+  <li>Discord: the Tool sends notifications about posting (the video title, the channel name, the scheduled time, the video URL and the status) through a webhook to a private Discord channel that only the operator can see. Discord's privacy policy applies to these messages.</li>
+</ul>
+<p>We do not share the information with anyone else, and we do not show it to anyone other than you.</p>
+
+<h2>Cookies, advertising and your device</h2>
+<p>The Tool does not show advertising, does not let third parties serve content, and does not use cookies or similar technologies. The Tool stores the information described above on the computer where it runs. This website does not use cookies or analytics. It is hosted on GitHub Pages, and GitHub logs visitors' IP addresses for security purposes (see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>).</p>
+
+<h2>Keeping and deleting information</h2>
+<ul>
+  <li>Authorization tokens are kept until you revoke the authorization.</li>
+  <li>Other information obtained through YouTube API Services is refreshed or deleted within 30 days. Records about published videos are checked again regularly (currently about every 6 hours), and records that are not refreshed are deleted after 30 days.</li>
+  <li>The Tool checks about once a day that your authorization is still valid. If the authorization was revoked or can no longer be refreshed, the Tool notifies you and, unless you authorize it again, deletes the information obtained through YouTube API Services within 30 days.</li>
+  <li>You can ask for the stored information to be deleted at any time: run <code>pnpm youtube:forget --channel &lt;id&gt;</code> (it deletes the information obtained through YouTube API Services at once; the authorization stays until you revoke it), or contact us below. When we receive a request, we delete the information within 7 days.</li>
+  <li>To revoke the authorization, run <code>pnpm oauth:revoke --channel &lt;id&gt;</code> (it revokes the authorization with Google and deletes the information obtained through YouTube API Services), or use the Google security settings page: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.</li>
+  <li>Deleting information stored by the Tool does not in any way affect data stored by YouTube. To delete videos or other data on YouTube, use YouTube (for example, YouTube Studio).</li>
+  <li>Notifications already delivered to Discord stay there until you delete them in Discord.</li>
+</ul>
+
+<h2>Google API Services User Data Policy</h2>
+<p>The Tool's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Changes</h2>
+<p>If we change how the Tool accesses, uses, stores or shares information, we will update this page and its effective date, and the Tool will ask you to agree again before it continues.</p>
+
+<h2>Contact</h2>
+<p>Questions or complaints about the Tool's privacy practices: <a href="mailto:aliekdike@gmail.com">aliekdike@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="ja" lang="ja">
+<h1>プライバシーポリシー</h1>
+<p class="muted">WonderScope Publisher — 施行日 2026年11月3日（版 2026-11-03）</p>
+
+<h2>このポリシーについて</h2>
+<p>WonderScope Publisher（以下「本ツール」）は、運営者自身の YouTube チャンネル（WonderScope（@WonderScope_jp）など）に短い動画をアップロードする、個人用のコマンドライン ツールです。運営者のコンピューターだけで動き、ほかの人には提供していません。このポリシーで「私たち」は本ツールを運営する開発者を、「あなた」は Google アカウントで本ツールを許可する人を指します。現在、許可する人は運営者本人だけです。</p>
+<p>本ツールは YouTube API サービスを使用しています。本ツールを使用することにより、あなたは <a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>（https://www.youtube.com/t/terms）に拘束されることに同意したものとします。Google による情報の扱いについては、<a href="http://www.google.com/policies/privacy">Google プライバシー ポリシー</a>（http://www.google.com/policies/privacy）をご覧ください。</p>
+<p>本ツールは、許可の手続きの前に、このポリシーと<a href="https://aliekdike-afk.github.io/terms.html">利用規約</a>への同意を求めます。</p>
+
+<h2>本ツールがアクセスする情報</h2>
+<p>許可のとき、本ツールは次の 2 つの権限を求めます。</p>
+<ul>
+  <li><code>youtube.upload</code>: 承認された動画をアップロードし、サムネイルを設定するため。</li>
+  <li><code>youtube.readonly</code>: 許可したアカウントのチャンネルを確かめ、本ツールが扱う動画の状態を確かめるため。</li>
+</ul>
+<p>これらの権限で本ツールがアクセスするのは、次の情報だけです。</p>
+<ul>
+  <li>Google が発行する認証トークン（アクセス トークンとリフレッシュ トークン）。</li>
+  <li>許可したアカウントの YouTube チャンネルの ID と名前。許可のときと、許可を使う前（1 日 1 回以上）に読み、意図したチャンネルの許可かを確かめます。保存するのはチャンネルの ID だけで、トークンと一緒に暗号化します（本ツールの設定にあるものと同じ ID です）。</li>
+  <li>本ツールがアップロードした動画、またはそのチャンネルに投稿済みとしてあなたが本ツールに記録した動画について: 動画 ID と URL、アップロードと処理の状態、公開設定、予約した公開日時、アップロードの失敗や却下の理由（YouTube が知らせたとき）。</li>
+</ul>
+<p>本ツールは、視聴履歴、コメント、登録者、アナリティクス、再生リスト、そのほかの動画にはアクセスしません。</p>
+
+<h2>あなたが用意する情報</h2>
+<p>動画、タイトル、説明文、タグ、カテゴリ、サムネイル、公開設定（公開・限定公開・非公開）、「子ども向け」の設定、公開日時。これらはあなたが作るもので、本ツールは動画ごとにあなたが承認したあとでだけ YouTube に送ります。承認の前に送る内容をそのまま表示し、承認された内容を変えずに送ります。</p>
+
+<h2>情報の使い方</h2>
+<ul>
+  <li>承認された動画を、選ばれた設定でアップロードし、公開を予約するため。</li>
+  <li>アップロードが終わったか、予約した動画が公開されたかを確かめ、公開済みの動画があとで非公開や削除になったことに気づいて、本ツールの記録を YouTube と合わせるため。</li>
+  <li>状態をあなたに表示し、知らせるため。</li>
+</ul>
+<p>本ツールは、これらの情報を広告に使わず、販売せず、AI モデルの学習にも使いません。</p>
+
+<h2>保存場所と安全対策</h2>
+<p>情報は、運営者が管理する機器（運営者のコンピューターと、使う場合は運営者自身のネットワーク ストレージ）にだけ、ローカルのデータベースとログ ファイルとして保存します。私たちはサーバーを運営しておらず、本ツールが「共有」に書いた先以外にこれらの情報を送ることはありません。認証トークンは保存の前に暗号化（AES-256-GCM）し、鍵はソースコードとは別のローカルの設定ファイルに置きます。Google との通信は HTTPS だけで行います。</p>
+
+<h2>共有</h2>
+<ul>
+  <li>YouTube（Google）: 承認された動画と設定、状態を確かめるためのリクエスト。</li>
+  <li>Discord: 投稿の知らせ（動画のタイトル、チャンネル名、予定の日時、動画の URL、状態）を、webhook で、運営者だけが見られる非公開の Discord チャンネルに送ります。これらのメッセージには Discord のプライバシー ポリシーが適用されます。</li>
+</ul>
+<p>これ以外の人や会社とは共有せず、あなた以外の人には見せません。</p>
+
+<h2>Cookie・広告・あなたの機器</h2>
+<p>本ツールは広告を表示せず、第三者にコンテンツを配信させず、Cookie やそれに類する技術を使いません。本ツールは、上に書いた情報を、本ツールが動くコンピューターに保存します。このウェブサイトは Cookie もアクセス解析も使いません。サイトは GitHub Pages で公開しており、GitHub はセキュリティのために訪問者の IP アドレスを記録します（<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシーに関する声明</a>を参照）。</p>
+
+<h2>情報の保存期間と削除</h2>
+<ul>
+  <li>認証トークンは、あなたが許可を取り消すまで保存します。</li>
+  <li>YouTube API サービスから得たそのほかの情報は、30 日以内に最新の情報に更新するか、削除します。公開済みの動画の記録は定期的に（現在は約 6 時間ごとに）確かめ直し、更新されない記録は 30 日を過ぎたら削除します。</li>
+  <li>本ツールは、許可が有効かを 1 日 1 回を目安に確かめます。許可が取り消された、または更新できなくなったときは、あなたに知らせ、許可し直さなければ、YouTube API サービスから得た情報を 30 日以内に削除します。</li>
+  <li>あなたはいつでも、保存された情報の削除を求められます。<code>pnpm youtube:forget --channel &lt;ID&gt;</code> を実行する（YouTube API サービスから得た情報をすぐに削除します。許可は、取り消すまで残ります）か、下の問い合わせ先に連絡してください。連絡を受けたときは 7 日以内に削除します。</li>
+  <li>許可の取り消しは、<code>pnpm oauth:revoke --channel &lt;ID&gt;</code>（Google に取り消しを送り、YouTube API サービスから得た情報も削除します）か、Google のセキュリティ設定ページ（<a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>）でできます。</li>
+  <li>本ツールが保存した情報を削除しても、YouTube に保存されているデータには一切影響しません。YouTube 上の動画などを削除するには、YouTube（YouTube Studio など）を使ってください。</li>
+  <li>Discord に届いた知らせは、Discord で削除するまで残ります。</li>
+</ul>
+
+<h2>Google API サービスのユーザーデータに関するポリシー</h2>
+<p>本ツールによる、Google API から受け取った情報の使用と転送は、限定使用の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>に従います。</p>
+
+<h2>変更</h2>
+<p>本ツールが情報にアクセスし、使い、保存し、共有する方法を変えるときは、このページと施行日を更新し、本ツールが続ける前にあなたにもう一度同意を求めます。</p>
+
+<h2>問い合わせ先</h2>
+<p>本ツールのプライバシーの扱いについての質問や苦情: <a href="mailto:aliekdike@gmail.com">aliekdike@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>The Japanese text is a translation of the English text. 日本語の文は英語の文の訳です。<br>
+  WonderScope Publisher uses YouTube API Services. It is not affiliated with or endorsed by YouTube or Google.</p>
+</footer>
+</main>
+</body>
+</html>

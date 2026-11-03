@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WonderScope Publisher</title>
+<meta name="description" content="WonderScope Publisher is a private command-line tool that uploads approved short videos to the operator's own YouTube channels using YouTube API Services.">
+<style>
+  :root { color-scheme: light dark; --fg: #1f2328; --muted: #59636e; --bg: #ffffff; --line: #d1d9e0; --link: #0969da; --code: rgba(127, 127, 127, 0.15); }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #3d444d; --link: #4493f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.95rem; }
+  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0.6em 0 0.3em; }
+  h2 { font-size: 1.25rem; line-height: 1.4; margin-top: 2em; padding-bottom: 0.3em; border-bottom: 1px solid var(--line); }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.9em; background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; }
+  .muted { color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<main>
+<nav>
+  <a href="https://aliekdike-afk.github.io/">Home</a>
+  <a href="https://aliekdike-afk.github.io/privacy.html">Privacy Policy</a>
+  <a href="https://aliekdike-afk.github.io/terms.html">Terms of Use</a>
+  <span class="muted">|</span>
+  <a href="#en">English</a>
+  <a href="#ja">日本語</a>
+</nav>
+
+<section id="en" lang="en">
+<h1>WonderScope Publisher</h1>
+<p>WonderScope Publisher is a private command-line tool that uploads short science and trivia videos to the operator's own YouTube channels, such as <a href="https://www.youtube.com/@WonderScope_jp">WonderScope (@WonderScope_jp)</a>. It uses the YouTube Data API v3 (YouTube API Services).</p>
+
+<h2>What it does</h2>
+<ol>
+  <li>The operator reviews each finished video and approves it. When approving, the operator chooses the title, the description, the privacy setting (public, unlisted or private), whether the video is made for kids, and the publication time. Before approval, the tool shows the exact information it will send to YouTube.</li>
+  <li>Ahead of the publication time (currently about 24 hours before), the tool uploads the approved video. For a public video, it schedules publication for the chosen time.</li>
+  <li>The tool checks that the upload finished and that the video was published. It keeps checking published videos so that its records match YouTube, and it notifies the operator of the results.</li>
+</ol>
+
+<h2>Google user data it requests</h2>
+<ul>
+  <li><code>youtube.upload</code>: to upload the approved videos and set their thumbnails.</li>
+  <li><code>youtube.readonly</code>: to confirm which channel the authorized account belongs to, and to check the status of the videos the tool manages.</li>
+</ul>
+<p>The tool does not read viewing history, comments, subscribers or analytics. See the <a href="https://aliekdike-afk.github.io/privacy.html">Privacy Policy</a> for details.</p>
+
+<h2>Who can use it</h2>
+<p>Only the operator. The tool runs on the operator's own computer. There is no sign-up, and the tool is not distributed.</p>
+
+<h2>Links</h2>
+<ul>
+  <li><a href="https://aliekdike-afk.github.io/privacy.html">Privacy Policy</a></li>
+  <li><a href="https://aliekdike-afk.github.io/terms.html">Terms of Use</a></li>
+  <li><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></li>
+  <li><a href="http://www.google.com/policies/privacy">Google Privacy Policy</a></li>
+</ul>
+<p>Contact: <a href="mailto:aliekdike@gmail.com">aliekdike@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="ja" lang="ja">
+<h1>WonderScope Publisher</h1>
+<p>WonderScope Publisher は、科学や雑学の短い動画を、運営者自身の YouTube チャンネル（<a href="https://www.youtube.com/@WonderScope_jp">WonderScope（@WonderScope_jp）</a>など）にアップロードする、個人用のコマンドライン ツールです。YouTube Data API v3（YouTube API サービス）を使います。</p>
+
+<h2>できること</h2>
+<ol>
+  <li>運営者が、できあがった動画を 1 本ずつ確かめて承認します。承認のときに、タイトル、説明文、公開設定（公開・限定公開・非公開）、子ども向けかどうか、公開日時を決めます。承認の前に、本ツールは YouTube に送る内容をそのまま表示します。</li>
+  <li>公開日時より前（現在は約 24 時間前）に、承認された動画をアップロードします。公開の動画は、選んだ日時に公開されるよう予約します。</li>
+  <li>アップロードが終わったか、公開されたかを確かめます。公開済みの動画もその後に確かめて記録を YouTube と合わせ、結果を運営者に知らせます。</li>
+</ol>
+
+<h2>求める Google のユーザーデータ</h2>
+<ul>
+  <li><code>youtube.upload</code>: 承認された動画をアップロードし、サムネイルを設定するため。</li>
+  <li><code>youtube.readonly</code>: 許可したアカウントのチャンネルを確かめ、本ツールが扱う動画の状態を確かめるため。</li>
+</ul>
+<p>視聴履歴、コメント、登録者、アナリティクスは読みません。詳しくは<a href="https://aliekdike-afk.github.io/privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+
+<h2>使う人</h2>
+<p>運営者だけです。本ツールは運営者のコンピューターで動きます。登録の手続きはなく、配布もしていません。</p>
+
+<h2>リンク</h2>
+<ul>
+  <li><a href="https://aliekdike-afk.github.io/privacy.html">プライバシーポリシー</a></li>
+  <li><a href="https://aliekdike-afk.github.io/terms.html">利用規約</a></li>
+  <li><a href="https://www.youtube.com/t/terms">YouTube 利用規約</a></li>
+  <li><a href="http://www.google.com/policies/privacy">Google プライバシー ポリシー</a></li>
+</ul>
+<p>問い合わせ先: <a href="mailto:aliekdike@gmail.com">aliekdike@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>WonderScope Publisher uses YouTube API Services. It is not affiliated with or endorsed by YouTube or Google.<br>
+  本ツールは YouTube API サービスを使用しています。YouTube および Google と提携しておらず、承認も受けていません。</p>
+</footer>
+</main>
+</body>
+</html>
